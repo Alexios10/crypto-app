@@ -1,0 +1,119 @@
+[debug] [2022-08-15T17:39:32.654Z] ----------------------------------------------------------------------
+[debug] [2022-08-15T17:39:32.655Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\satta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-15T17:39:32.656Z] CLI Version:   11.4.0
+[debug] [2022-08-15T17:39:32.656Z] Platform:      win32
+[debug] [2022-08-15T17:39:32.656Z] Node Version:  v18.4.0
+[debug] [2022-08-15T17:39:32.657Z] Time:          Mon Aug 15 2022 19:39:32 GMT+0200 (sentraleuropeisk sommertid)
+[debug] [2022-08-15T17:39:32.657Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-15T17:39:32.704Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-15T17:39:32.705Z] > authorizing via signed-in user (alexios199101@gmail.com)
+[debug] [2022-08-15T17:39:32.705Z] [iam] checking project cryptobase-ba4f8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-15T17:39:32.706Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions [none]
+[debug] [2022-08-15T17:39:32.707Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions x-goog-quota-user=projects/cryptobase-ba4f8
+[debug] [2022-08-15T17:39:32.707Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-15T17:39:33.560Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions 200
+[debug] [2022-08-15T17:39:33.560Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-15T17:39:33.561Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 [none]
+[debug] [2022-08-15T17:39:33.914Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 200
+[debug] [2022-08-15T17:39:33.914Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 {"projectId":"cryptobase-ba4f8","projectNumber":"562222600450","displayName":"cryptobase","name":"projects/cryptobase-ba4f8","resources":{"hostingSite":"cryptobase-ba4f8","storageBucket":"cryptobase-ba4f8.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_f190e0a7-a9f4-49f1-8676-d34455c14b06"}
+[info] 
+[info] === Deploying to 'cryptobase-ba4f8'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-15T17:39:33.916Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 [none]
+[debug] [2022-08-15T17:39:34.207Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 200
+[debug] [2022-08-15T17:39:34.207Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 {"projectId":"cryptobase-ba4f8","projectNumber":"562222600450","displayName":"cryptobase","name":"projects/cryptobase-ba4f8","resources":{"hostingSite":"cryptobase-ba4f8","storageBucket":"cryptobase-ba4f8.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_f190e0a7-a9f4-49f1-8676-d34455c14b06"}
+[debug] [2022-08-15T17:39:34.209Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/562222600450/sites/cryptobase-ba4f8/versions [none]
+[debug] [2022-08-15T17:39:34.209Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/562222600450/sites/cryptobase-ba4f8/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-15T17:39:35.319Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/562222600450/sites/cryptobase-ba4f8/versions 500
+[debug] [2022-08-15T17:39:35.320Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/562222600450/sites/cryptobase-ba4f8/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-08-15T17:39:35.439Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-08-15T17:41:49.614Z] ----------------------------------------------------------------------
+[debug] [2022-08-15T17:41:49.616Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\satta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-15T17:41:49.616Z] CLI Version:   11.6.0
+[debug] [2022-08-15T17:41:49.616Z] Platform:      win32
+[debug] [2022-08-15T17:41:49.616Z] Node Version:  v18.4.0
+[debug] [2022-08-15T17:41:49.617Z] Time:          Mon Aug 15 2022 19:41:49 GMT+0200 (sentraleuropeisk sommertid)
+[debug] [2022-08-15T17:41:49.617Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-15T17:41:49.678Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-15T17:41:49.678Z] > authorizing via signed-in user (alexios199101@gmail.com)
+[debug] [2022-08-15T17:41:49.679Z] [iam] checking project cryptobase-ba4f8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-15T17:41:49.681Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions [none]
+[debug] [2022-08-15T17:41:49.681Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions x-goog-quota-user=projects/cryptobase-ba4f8
+[debug] [2022-08-15T17:41:49.681Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-15T17:41:50.499Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions 200
+[debug] [2022-08-15T17:41:50.499Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cryptobase-ba4f8:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-15T17:41:50.500Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 [none]
+[debug] [2022-08-15T17:41:50.822Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 200
+[debug] [2022-08-15T17:41:50.822Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 {"projectId":"cryptobase-ba4f8","projectNumber":"562222600450","displayName":"cryptobase","name":"projects/cryptobase-ba4f8","resources":{"hostingSite":"cryptobase-ba4f8","storageBucket":"cryptobase-ba4f8.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_f190e0a7-a9f4-49f1-8676-d34455c14b06"}
+[info] 
+[info] === Deploying to 'cryptobase-ba4f8'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-15T17:41:50.824Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 [none]
+[debug] [2022-08-15T17:41:51.134Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 200
+[debug] [2022-08-15T17:41:51.134Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cryptobase-ba4f8 {"projectId":"cryptobase-ba4f8","projectNumber":"562222600450","displayName":"cryptobase","name":"projects/cryptobase-ba4f8","resources":{"hostingSite":"cryptobase-ba4f8","storageBucket":"cryptobase-ba4f8.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_f190e0a7-a9f4-49f1-8676-d34455c14b06"}
+[debug] [2022-08-15T17:41:51.136Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/562222600450/sites/cryptobase-ba4f8/versions [none]
+[debug] [2022-08-15T17:41:51.136Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/562222600450/sites/cryptobase-ba4f8/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-15T17:41:52.197Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/562222600450/sites/cryptobase-ba4f8/versions 500
+[debug] [2022-08-15T17:41:52.197Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/562222600450/sites/cryptobase-ba4f8/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-08-15T17:41:52.292Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-08-15T17:42:18.448Z] ----------------------------------------------------------------------
+[debug] [2022-08-15T17:42:18.449Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\satta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-08-15T17:42:18.450Z] CLI Version:   11.6.0
+[debug] [2022-08-15T17:42:18.450Z] Platform:      win32
+[debug] [2022-08-15T17:42:18.450Z] Node Version:  v18.4.0
+[debug] [2022-08-15T17:42:18.450Z] Time:          Mon Aug 15 2022 19:42:18 GMT+0200 (sentraleuropeisk sommertid)
+[debug] [2022-08-15T17:42:18.451Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-15T17:42:18.500Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-15T17:42:18.501Z] > authorizing via signed-in user (alexios199101@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\satta\Desktop\my-projects\crypto-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-08-15T17:42:43.473Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:220:13)
+    at process.listener (C:\Users\satta\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:537:28)
+[error] 
+[error] Error: An unexpected error has occurred.
