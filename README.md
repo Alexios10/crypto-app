@@ -1,7 +1,7 @@
 
  • This project is built with React 
  
- • Used useContext to pass down the data
+ • Used useContext to share data between the components
  
  • Also used the React-Router-Dom for dynamic routing
  
