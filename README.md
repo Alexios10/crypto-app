@@ -11,6 +11,7 @@
  
  • And Fetching the API from CoinGecko
  
+ demo : https://crypto-app-rosy-iota.vercel.app/
  
  
  
