@@ -1,15 +1,13 @@
 
- • This project is built with React 
+ • Built with React 
  
- • Used useContext to share data between the components
+ • Used React Router for dynamic routing
  
- • Also used the React-Router-Dom for dynamic routing
+ • Tailwind CSS for styling
  
- • Used Tailwind CSS for styling
+ • Firebase for user authentication and data storage
  
- • Used Firebase for user authentication
- 
- • And Fetching the API from CoinGecko
+ • API endpoint from CoinGecko.com
  
  demo : https://crypto-app-rosy-iota.vercel.app/
  
