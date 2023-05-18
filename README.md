@@ -1,7 +1,7 @@
 
  • Built with React 
  
- • Used React Router for dynamic routing
+ • Used React-Router-Dom  for dynamic routing
  
  • Tailwind CSS for styling
  
